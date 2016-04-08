@@ -10,10 +10,39 @@
   font-family: 'Bangers', cursive;
   padding: 25px;
   background-color: #ccb2b2;
+  width: 95%;
 
 }
 h1 {
   font-family: 'Bangers', cursive;
   background-color: #ccb2b2;
   margin: 15px;
+}
+.row {
+  margin-top: 60px;
+}
+.col-md-4 {
+  background-color: #cec5c5;
+  font-family: 'Bangers', cursive;
+  margin-top: 25px;
+  width: 28%;
+  margin: 20px;
+}
+.checkbox {
+  text-align: left;
+  margin-left: 20px;
+}
+.btn {
+  align-items: center
+  margin: 30px;
+  font size: 12pt;
+  background-color: black;
+  color: white;
+  width: 120px;
+  height: 36px;
+  text-align: center;
+}
+.btn:hover {
+  color: red;
+  background-color: white;
 }

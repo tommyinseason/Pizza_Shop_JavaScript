@@ -11,32 +11,72 @@
     <body>
       <div class=jumbotron>Perfect Pizza
       </div>
-      <div class="container">
-        <h1>Welcome to "Perfect Pizza" home of the fully customizeable pizza. We make ordering the pizza you love most the easiest. Choose from our selections of size, toppings and sauce to customize your pizza the way you want it!</h1>
-        <div class="col-md-4">
-          <div class="fun">
-            
-
+        <div class="container">
+            <h1>Welcome to "Perfect Pizza" home of the fully customizeable pizza. We make ordering the pizza you love most the easiest. Choose from our selections of size, toppings and sauce to customize your pizza the way you want it!
+            </h1>
+          <div class="row">
+              <div class="col-md-4">
+                <form id="input">
+                  <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="pizzaSize">Pizza Size</label>
+                      <select class="form-control" id="moviesOut">
+                       <option value="0">---Select Size---</option>
+                       <option value="1">Kids 8"</option>
+                       <option value="2">Small 10"</option>
+                       <option value="3">Med 12"</option>
+                       <option value="4">Large 14"</option>
+                       <option value="6">X Large 16"</option>
+                       <option value="8">XX Large 18"</option>
+                       <option value="14">Giant 30"</option>
+                      </select>
+                  </div>
+                  <div class="checkbox">
+                    <label id="toppings">Choose Toppings:</label>
+                      <p><em>Reg Toppings $1 Extra</em></p>
+                      <input type="checkbox" value="">X-Tra Cheese</br>
+                      <input type="checkbox" value="">Pepperoni</br>
+                      <input type="checkbox" value="">Sausage</br>
+                      <input type="checkbox" value="">Canadian Bacon</br>
+                      <input type="checkbox" value="">Ham</br>
+                      <input type="checkbox" value="">Pineapple</br>
+                      <input type="checkbox" value="">Garlic</br>
+                      <input type="checkbox" value="">Basil</br>
+                      <input type="checkbox" value="">Roma Tomatoes</br>
+                      <input type="checkbox" value="">Spinach</br>
+                      <input type="checkbox" value="">Olives</br>
+                      <input type="checkbox" value="">Peppers</br>
+                      <input type="checkbox" value="">Garlic</br>
+                      <input type="checkbox" value="">Onions</br></br>
+                      <p><em>Premium Toppings $2 Extra:</em></p>
+                      <input type="checkbox" value="">Triple Cheese</br>
+                      <input type="checkbox" value="">Stir Fry Peppers and Onions</br>
+                      <input type="checkbox" value="">Thick Cut Bacon</br>
+                      <input type="checkbox" value="">Organic Beef</br>
+                      <input type="checkbox" value="">Red Veggie Mix</br>
+                      <input type="checkbox" value="">Green Veggie Mix</br>
+                      <input type="checkbox" value="">Spicy Peppers Mix</br>
+                      <input type="checkbox" value="">Permium Sausage</br>
+                    </label>
+                 </div>
+                   <button type="submit" class="btn">Submit My Order</button></br>
+                </form>
+              </div>
+                  <div class="col-md-4">
+                    <h2>Price My Pizza:</h2>
+                      <div id="output">
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                    Review Order:
+                    <div id="reviewOrder">
+                    </div>
+                  </p>
+                  </div>
           </div>
-          <p>A
-
-          </p>
         </div>
-        <div class="col-md-4">
-          <p>B
-
-          </p>
-        </div>
-        <div class="col-md-4">
-          <p>C
-
-        </p>
-        </div>
-
-
-
-
-
-
     </body>
 </html>
