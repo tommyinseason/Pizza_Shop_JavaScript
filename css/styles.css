@@ -1,0 +1,19 @@
+.jumbotron {
+  text-align: center;
+  font-size: 100pt;
+  font-family: 'Bangers', cursive;
+  color: red;
+  background-color: black;
+}
+.container {
+  background-color: grey;
+  font-family: 'Bangers', cursive;
+  padding: 25px;
+  background-color: #ccb2b2;
+
+}
+h1 {
+  font-family: 'Bangers', cursive;
+  background-color: #ccb2b2;
+  margin: 15px;
+}
