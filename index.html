@@ -34,40 +34,44 @@
                        <option value="14">Giant 30"</option>
                       </select>
                   </div>
-                  <div class="checkbox">
-                    <label id="toppings">Choose Toppings:</label>
-                      <p><em>Reg Toppings $1 Extra</em></p>
-                      <input type="checkbox" value="">X-Tra Cheese</br>
-                      <input type="checkbox" value="">Pepperoni</br>
-                      <input type="checkbox" value="">Sausage</br>
-                      <input type="checkbox" value="">Canadian Bacon</br>
-                      <input type="checkbox" value="">Ham</br>
-                      <input type="checkbox" value="">Pineapple</br>
-                      <input type="checkbox" value="">Garlic</br>
-                      <input type="checkbox" value="">Basil</br>
-                      <input type="checkbox" value="">Roma Tomatoes</br>
-                      <input type="checkbox" value="">Spinach</br>
-                      <input type="checkbox" value="">Olives</br>
-                      <input type="checkbox" value="">Peppers</br>
-                      <input type="checkbox" value="">Garlic</br>
-                      <input type="checkbox" value="">Onions</br></br>
-                      <p><em>Premium Toppings $2 Extra:</em></p>
-                      <input type="checkbox" value="">Triple Cheese</br>
-                      <input type="checkbox" value="">Stir Fry Peppers and Onions</br>
-                      <input type="checkbox" value="">Thick Cut Bacon</br>
-                      <input type="checkbox" value="">Organic Beef</br>
-                      <input type="checkbox" value="">Red Veggie Mix</br>
-                      <input type="checkbox" value="">Green Veggie Mix</br>
-                      <input type="checkbox" value="">Spicy Peppers Mix</br>
-                      <input type="checkbox" value="">Permium Sausage</br>
-                    </label>
-                 </div>
+                  <div class="form-group">
+                    <label for="pizzaCheese">Pizza Size</label>
+                      <select class="form-control" id="moviesOut">
+                       <option value="0">---Select Cheese---</option>
+                       <option value="1">Ricotta</option>
+                       <option value="2">Mozzerela</option>
+                       <option value="3">4 Cheese Blend</option>
+                      </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="pizzaMeat">Pizza Size</label>
+                      <select class="form-control" id="moviesOut">
+                       <option value="0">---Select Meat---</option>
+                       <option value="1">Pepperoni</option>
+                       <option value="2">Sausage</option>
+                       <option value="3">Beef</option>
+                      </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="pizzaVegges">Pizza Size</label>
+                      <select class="form-control" id="moviesOut">
+                       <option value="0">---Select Meat---</option>
+                       <option value="1">Peppers</option>
+                       <option value="2">Onions</option>
+                       <option value="3">Tomatoes</option>
+                      </select>
+                  </div>
                    <button type="submit" class="btn">Submit My Order</button></br>
                 </form>
               </div>
                   <div class="col-md-4">
+                    <div id="output">
+                    <p>Name: <span class="showName"></span></p>
+                    <p>Pizza: <span class="showPizza"></span></p>
+                  </div>
                     <h2>Price My Pizza:</h2>
                       <div id="output">
+
                       </div>
                   </div>
                   <div class="col-md-4">
