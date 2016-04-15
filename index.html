@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
+  </head>
+  <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.12.2.js"></script>
@@ -15,72 +18,64 @@
             <h1>Welcome to "Perfect Pizza" home of the fully customizeable pizza. We make ordering the pizza you love most the easiest. Choose from our selections of size, toppings and sauce to customize your pizza the way you want it!
             </h1>
           <div class="row">
+            <div class="col-md-4">
+              <form id="input">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                  <label for="pizzaSize">Pizza Size</label>
+                    <select class="form-control" id="pizzaSize">
+                     <option value="0">---Select Size---</option>
+                     <option value="1">Kids 8"</option>
+                     <option value="2">Small 10"</option>
+                     <option value="3">Med 12"</option>
+                     <option value="4">Large 14"</option>
+                     <option value="6">X Large 16"</option>
+                     <option value="8">XX Large 18"</option>
+                     <option value="14">Giant 30"</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                  <label for="pizzaCheese">Pizza Cheese</label>
+                    <select class="form-control" id="pizzaCheese">
+                     <option value="0">---Select Cheese---</option>
+                     <option value="1">Ricotta</option>
+                     <option value="1">Mozzerela</option>
+                     <option value="2">4 Cheese Blend</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                  <label for="pizzaMeat">Pizza Meat</label>
+                    <select class="form-control" id="pizzaMeat">
+                     <option value="0">---Select Meat---</option>
+                     <option value="1">Pepperoni</option>
+                     <option value="1">Sausage</option>
+                     <option value="1">Beef</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                  <label for="pizzaVegges">Pizza Vegges</label>
+                    <select class="form-control" id="pizzaVegges">
+                     <option value="0">---Select Meat---</option>
+                     <option value="1">Peppers</option>
+                     <option value="1">Onions</option>
+                     <option value="1">Tomatoes</option>
+                    </select>
+                </div>
+                    <button type="submit" class="btn">Submit My Order</button></br>
+              </form>
+            </div>
               <div class="col-md-4">
-                <form id="input">
-                  <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" class="form-control" id="name">
-                  </div>
-                  <div class="form-group">
-                    <label for="pizzaSize">Pizza Size</label>
-                      <select class="form-control" id="moviesOut">
-                       <option value="0">---Select Size---</option>
-                       <option value="1">Kids 8"</option>
-                       <option value="2">Small 10"</option>
-                       <option value="3">Med 12"</option>
-                       <option value="4">Large 14"</option>
-                       <option value="6">X Large 16"</option>
-                       <option value="8">XX Large 18"</option>
-                       <option value="14">Giant 30"</option>
-                      </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="pizzaCheese">Pizza Size</label>
-                      <select class="form-control" id="moviesOut">
-                       <option value="0">---Select Cheese---</option>
-                       <option value="1">Ricotta</option>
-                       <option value="2">Mozzerela</option>
-                       <option value="3">4 Cheese Blend</option>
-                      </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="pizzaMeat">Pizza Size</label>
-                      <select class="form-control" id="moviesOut">
-                       <option value="0">---Select Meat---</option>
-                       <option value="1">Pepperoni</option>
-                       <option value="2">Sausage</option>
-                       <option value="3">Beef</option>
-                      </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="pizzaVegges">Pizza Size</label>
-                      <select class="form-control" id="moviesOut">
-                       <option value="0">---Select Meat---</option>
-                       <option value="1">Peppers</option>
-                       <option value="2">Onions</option>
-                       <option value="3">Tomatoes</option>
-                      </select>
-                  </div>
-                   <button type="submit" class="btn">Submit My Order</button></br>
-                </form>
+                <div class="showName"></div>
+                  <p>The Price of your pizza is $<span class="showPrice"></span>  </p>
               </div>
-                  <div class="col-md-4">
-                    <div id="output">
-                    <p>Name: <span class="showName"></span></p>
-                    <p>Pizza: <span class="showPizza"></span></p>
-                  </div>
-                    <h2>Price My Pizza:</h2>
-                      <div id="output">
+              <div class="col-md-4">
 
-                      </div>
-                  </div>
-                  <div class="col-md-4">
-                    Review Order:
-                    <div id="reviewOrder">
-                    </div>
-                  </p>
-                  </div>
-          </div>
-        </div>
-    </body>
+
+              </div>
+      </div>
+    </div>
+  </body>
 </html>

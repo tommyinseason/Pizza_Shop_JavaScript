@@ -8,6 +8,7 @@ function Pizza (size, cheese, meat, vegges) {
 
 
         Pizza.prototype.price = function() {
+
          var price = 0;
 
          if (this.pizzaSize === 1) {
@@ -24,9 +25,18 @@ function Pizza (size, cheese, meat, vegges) {
             price += 12;
        } else if (this.pizzaSize === 14) {
             price += 23;
-       }   return price;
+       } if (this.pizzaCheese === 1) {
+            price += 2;
+       } else if (this.pizzaCheese === 2) {
+            price += 4;
+       } if (this.pizzaMeat === 1) {
+            price += 2;
+       } if (this.pizzaVegges === 1) {
+            price += 2;
+       };
 
-
+       return price;
+};
       //    if (this.pizzaCheese === "ricotta" || this.pizzaCheese === "mozzerela" || this. === "4 Cheese Blend") {
       //      price += 2;
       //  } else if (this.meat === "pepperoni" || this.meat === "sausage" || this.meat === "beef") {
@@ -35,10 +45,9 @@ function Pizza (size, cheese, meat, vegges) {
       //      price += 2;
       //  }
 
-  }
         Pizza.prototype.showOrder = function() {
         return "Please Confirm Pizza Below:" + "</br>" + this.pizzaSize + "</br>" + "with" + this.pizzaCheese + "</br>" + this.pizzaMeat + "</br>" + this.pizzaVegges + "</br>" + "Enjoy!"
-  }
+  };
 
 
 
@@ -48,10 +57,10 @@ function Pizza (size, cheese, meat, vegges) {
     $("#input").submit(function(event){
       event.preventDefault();
       var inputName = $("input#name").val();
-      var inputSize = $("#pizzaSize option:selected").val();
-      var inputCheese = $("#pizzaCheese option:selected").val();
-      var inputMeat = $("#pizzaMeat option:selected").val();
-      var inputVegges = $("#pizzaVegges option:selected").val();
+      var inputSize = parseInt($("#pizzaSize option:selected").val());
+      var inputCheese = parseInt($("#pizzaCheese option:selected").val());
+      var inputMeat = parseInt($("#pizzaMeat option:selected").val());
+      var inputVegges = parseInt($("#pizzaVegges option:selected").val());
 
 
       if (inputSize === null || inputCheese === null || inputMeat === null || inputVegges === null) {
@@ -60,15 +69,9 @@ function Pizza (size, cheese, meat, vegges) {
       var newPizza = new Pizza(inputSize, inputCheese, inputMeat, inputVegges);
       var result = newPizza.price();
 
-      $(".btn").click(function(event) {
-      event.preventDefault();
-
-      $("#output").submit(function() {
-      $("#output").show();
-      $(".showPizza").prepend(newPizza.showOrder());
+      $(".showName").text(inputName);
       $(".showPrice").text(result);
-    });
+
+    }
   });
-}
-});
 });
